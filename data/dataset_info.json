@@ -10,7 +10,6 @@
   },
   "coma_python": {
     "file_name": "CoMA_python_data.json",
-    "formatting": "sharegpt",
     "columns": {
       "prompt": "instruction",
       "query": "input",
