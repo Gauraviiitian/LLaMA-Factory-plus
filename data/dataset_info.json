@@ -8,12 +8,13 @@
   "alpaca_zh_demo": {
     "file_name": "alpaca_zh_demo.json"
   },
-  "dataset_name": {
+  "coma_python": {
     "file_name": "CoMA_python_data.json",
+    "formatting": "sharegpt",
     "columns": {
       "prompt": "instruction",
       "query": "input",
-      "response": "output",
+      "response": "output"
     }
   },
   "glaive_toolcall_en_demo": {
