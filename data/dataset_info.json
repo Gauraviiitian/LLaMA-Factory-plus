@@ -8,6 +8,14 @@
   "alpaca_zh_demo": {
     "file_name": "alpaca_zh_demo.json"
   },
+  "dataset_name": {
+    "file_name": "CoMA_python_data.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+    }
+  },
   "glaive_toolcall_en_demo": {
     "file_name": "glaive_toolcall_en_demo.json",
     "formatting": "sharegpt",
