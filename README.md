@@ -73,22 +73,30 @@ Choose your path:
 
 ## CoMA dataset
 Step 1:
+```bash
 %rm -rf LLaMA-Factory
 !git clone https://github.com/Gauraviiitian/LLaMA-Factory-plus.git
 %cd LLaMA-Factory-plus
 %ls
 %pip install -e .[torch,bitsandbytes]
- 
+ ```
+
 Step 2:
+```bash
 import os
 os.environ["HF_TOKEN"] = <hf-token>
+```
  
 Step 3:
+```bash
 from huggingface_hub import login
 login(token = os.environ["HF_TOKEN"])
+```
  
 Step 4:
+```bash
 !GRADIO_SHARE=1 llamafactory-cli webui
+```
  
 Step 5:
 a. select model name "Custom" and model name "microsoft/Phi-3-mini-128k-instruct"
