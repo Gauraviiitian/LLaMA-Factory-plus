@@ -99,10 +99,10 @@ Step 4:
 ```
  
 Step 5:
-a. select model name "Custom" and model name "microsoft/Phi-3-mini-128k-instruct"
-b. select Dataset "coma_python"
-c. keep hyperparams as needed
-d. start training
+- select model name "Custom" and model name "microsoft/Phi-3-mini-128k-instruct"
+- select Dataset "coma_python"
+- keep hyperparams as needed
+- start training
 
 ## Features
 
