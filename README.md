@@ -47,7 +47,7 @@ Choose your path:
 > Except for the above links, all other websites are unauthorized third-party websites. Please carefully use them.
 
 ## Table of Contents
-
+- [CoMA Dataset](#coma)
 - [Features](#features)
 - [Benchmark](#benchmark)
 - [Changelog](#changelog)
@@ -70,6 +70,31 @@ Choose your path:
 - [License](#license)
 - [Citation](#citation)
 - [Acknowledgement](#acknowledgement)
+
+## CoMA dataset
+Step 1:
+%rm -rf LLaMA-Factory
+!git clone https://github.com/Gauraviiitian/LLaMA-Factory-plus.git
+%cd LLaMA-Factory-plus
+%ls
+%pip install -e .[torch,bitsandbytes]
+ 
+Step 2:
+import os
+os.environ["HF_TOKEN"] = <hf-token>
+ 
+Step 3:
+from huggingface_hub import login
+login(token = os.environ["HF_TOKEN"])
+ 
+Step 4:
+!GRADIO_SHARE=1 llamafactory-cli webui
+ 
+Step 5:
+a. select model name "Custom" and model name "microsoft/Phi-3-mini-128k-instruct"
+b. select Dataset "coma_python"
+c. keep hyperparams as needed
+d. start training
 
 ## Features
 
